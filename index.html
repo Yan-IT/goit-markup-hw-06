@@ -371,12 +371,29 @@
             </ul>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg width="20" height="20" class="modal-close-button">
-            <use href="./images/icons.svg#modal-close"></use> </svg>
+            <use href="./images/icons.svg#modal-close"></use> </svg>  
         </button>
+         <p class="modal-title">Заголовок модального вікна</p>
+            <form class="modal-form">
+              <label>  <span class="input-text">Ім'я</span>
+                <input type="text" class="modal-input" name="user-name" placeholder=" " required>
+               </label> 
+              <label> <span class="input-text">Телефон</span>
+                <input type="tel" class="modal-input" name="user-tel" placeholder=" " required>
+               </label>  
+              <label> <span class="input-text">Пошта</span>
+                <input type="email" class="modal-input" name="user-email" placeholder=" ">
+              </label> 
+              <label> <span class="input-text">Коментар</span>
+                <textarea name="user-text" rows="10" class="modal-input-text" placeholder="Введіть текст"></textarea>
+              </label> 
+
+              <button type="submit">Відправити</button>
+            </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

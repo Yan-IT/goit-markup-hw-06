@@ -142,11 +142,11 @@ img {
 }
 
 .site-nav-list .link {
-color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .site-nav-list .contact {
-color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .site-nav-list .link:hover,
@@ -162,7 +162,7 @@ color: var(--title-text-color);
 
 .site-nav-list .link.current::after {
   position: absolute;
-  
+
   content: '';
   width: 100%;
   height: 4px;
@@ -339,8 +339,6 @@ color: var(--title-text-color);
   align-items: center;
 }
 
-
-
 .sec3 {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -416,7 +414,7 @@ color: var(--title-text-color);
   height: 100%;
   display: flex;
   border-radius: 50%;
-  color: #AFB1B8;
+  color: #afb1b8;
   justify-content: center;
   align-items: center;
 
@@ -429,7 +427,7 @@ color: var(--title-text-color);
   color: var(--primary-white-color);
 }
 
-.soc_icons {                  
+.soc_icons {
   fill: currentColor;
 }
 
@@ -692,7 +690,7 @@ color: var(--title-text-color);
   overflow: auto;
 }
 
-.gallery-list-link:hover .gallery-list-toptext, 
+.gallery-list-link:hover .gallery-list-toptext,
 .gallery-list-link:focus .gallery-list-toptext {
   transform: translateY(0%);
 }
@@ -738,6 +736,7 @@ color: var(--title-text-color);
   top: 50%;
   left: 50%;
 
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   background-color: var(--primary-white-color);
@@ -778,4 +777,64 @@ color: var(--title-text-color);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  margin-bottom: 30px;
+}
+.modal-form {
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+}
+
+.modal-input:placeholder {
+  font-size: 12px;
+  color: tomato;
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+
+  resize: none;
+}
+
+.modal-input-text:placeholder {
+  color: var(--title-text-color);
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid,
+.modal-input-text:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(49, 219, 49, 0.158);
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(219, 58, 49, 0.158);
+}
+
+.input-text {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
 }
