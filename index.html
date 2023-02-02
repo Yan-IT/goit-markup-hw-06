@@ -379,9 +379,18 @@
         </button>
          <p class="modal-title">Заголовок модального вікна</p>
             <form class="modal-form">
-              <label>  <span class="input-text">Ім'я</span>
-                <input type="text" class="modal-input" name="user-name" placeholder=" " required>
+              <label>  
+                <span class="input-text">Ім'я</span>
+                <span class="input-wrap">
+                  <input type="text" class="modal-input" name="user-name" placeholder=" " required />
+                    <svg class="input-icon" width="12" height="12">
+                      <use href="./images/icons.svg#icon-modal-person"></use>
+                
+                    </svg>
+                </span>
                </label> 
+
+
               <label> <span class="input-text">Телефон</span>
                 <input type="tel" class="modal-input" name="user-tel" placeholder=" " required>
                </label>  
