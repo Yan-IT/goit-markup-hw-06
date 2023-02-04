@@ -944,7 +944,7 @@ img {
   content: '';
   width: 16px;
   height: 16px;
-  border: 2px solid #000;
+  border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-left: 12px;
   margin-right: 8px;
@@ -983,7 +983,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #fff;
-  background: #2196f3;
+  background: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
   border-color: transparent;
