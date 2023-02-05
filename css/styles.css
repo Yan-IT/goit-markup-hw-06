@@ -550,16 +550,16 @@ img {
   margin-left: 70px;
 }
 
-.join-title {
+.footer-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 
   margin-bottom: 20px;
 }
+
 .join-list {
   display: flex;
   justify-content: center;
@@ -599,16 +599,6 @@ img {
   padding-left: 93px;
 }
 
-.email-input-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-
-  padding-bottom: 20px;
-}
-
 .form-subscribe-footer {
   display: flex;
   align-items: center;
@@ -629,7 +619,6 @@ img {
   background-color: transparent;
 
   padding-left: 16px;
-  margin-right: 12px;
 }
 
 .footer-email::placeholder {
@@ -652,6 +641,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   padding-left: 28px;
+  margin-left: 12px;
 }
 
 .btn-subscribe-icon {
@@ -851,7 +841,7 @@ img {
   text-align: center;
   color: var(--primary-text-color);
 
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .modal-form {
 }
@@ -904,6 +894,12 @@ img {
   transition: fill var(--tran);
 }
 
+.modal-label {
+  display: block;
+
+  margin-bottom: 20px;
+}
+
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -916,8 +912,6 @@ img {
   transition: border-color var(--tran);
 
   resize: none;
-
-  margin-bottom: 20px;
 }
 
 .modal-comment:focus {
@@ -975,7 +969,9 @@ img {
 }
 
 .btn-modal-send {
-  margin-left: 124px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   padding: 10px 52px;
   font-weight: 700;
