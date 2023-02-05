@@ -90,10 +90,12 @@ img {
 
 /* Навигация по сайту */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .site-nav-list {
